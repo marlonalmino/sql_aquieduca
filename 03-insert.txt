@@ -1,0 +1,13 @@
+-- insert in tables
+
+INSERT INTO public.cliente(
+	id, nome, telefone, cpf)
+	VALUES (1, 'Marlon', '88993440123', '1234');
+	
+INSERT INTO public.cliente(
+	id, nome, telefone, cpf)
+	VALUES (2, 'Breno', '88997740123', '1243');
+	
+INSERT INTO public.cliente(
+	id, nome, telefone, cpf)
+	VALUES (3, 'Igor', '88993440546', '1244');
