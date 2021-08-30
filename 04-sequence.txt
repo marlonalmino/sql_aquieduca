@@ -1,0 +1,15 @@
+-- add sequence
+
+CREATE SEQUENCE public.seq_cliente
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 999999999
+    CACHE 1;
+
+ALTER SEQUENCE public.seq_cliente
+    OWNER TO postgres;
+
+-- adicionar nextval('seq_cliente'::regclass) ao Default em Constraints, no id da tabela Cliente
+
+SELECT setval('public.seq_cliente', 3, true);
