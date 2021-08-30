@@ -1,0 +1,6 @@
+-- add unique constraint
+
+ALTER TABLE public.cliente
+    ADD COLUMN cpf character varying(20) NOT NULL;
+ALTER TABLE public.cliente
+    ADD CONSTRAINT u_cpf UNIQUE (cpf);
